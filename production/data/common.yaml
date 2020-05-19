@@ -1,0 +1,7 @@
+---
+nginx::package_names:  'nginx'
+nginx::package_ensure: 'installed'
+  
+
+
+

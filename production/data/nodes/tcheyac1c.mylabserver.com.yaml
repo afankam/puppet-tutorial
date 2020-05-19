@@ -1,0 +1,3 @@
+---
+nginx::install::package_names: 'nginx'
+nginx::install::package_ensure: 'installed'
