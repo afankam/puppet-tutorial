@@ -8,8 +8,8 @@
 class nginx::service {
   service { 'nginx_service':
     name       => 'nginx',
-    ensure     => 'running',
-    enable     => true,
-    hasrestart => true,
+    ensure     => $nginx::service_ensure,
+    enable     => $nginx::service_enable,
+    hasrestart => $nginx::service_hasrestart,
   }
 }

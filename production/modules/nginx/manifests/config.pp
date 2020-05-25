@@ -10,7 +10,7 @@ class nginx::config {
   file { 'nginx_config':
     path    => '/etc/nginx/nginx.conf',
     source  => 'puppet:///modules/nginx/rh-nginx.conf',
-    ensure  => 'present',
+    ensure  => $nginx::config_ensure,
     backup  => true, 
     notify  => Service['nginx_service'],
   }
